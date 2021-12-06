@@ -42,4 +42,4 @@
 			{ "devDependencies": ["mapCoverage.{js,ts}", "{test,tests,__tests__}/**/*.{js,ts}"] }
 		]
 	}
-};
+}
