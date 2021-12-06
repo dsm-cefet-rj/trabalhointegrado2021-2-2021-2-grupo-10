@@ -1,0 +1,15 @@
+name: PR Checker
+on: pull_request
+jobs:
+  main:
+    runs-on: ubuntu
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 10
+      - name: Build
+        run: npm i
+      - name: Tests
+        run: |
+          npm run test
