@@ -1,14 +1,54 @@
-# PSW - Grupo 10 - 2021/2
+# NegócioFechado - Grupo 10
 
-Projeto do grupo 10 de PSW. 
+### Problema e solução
 
-### Contexto
+O Brasil vem entrando numa crise de desemprego crescente nos últimos anos, que por consequência aumentou muito o número de trabalhadores informais que estão sujeitos à qualidade de trabalho arbitrárias e muitas vezes abusivas.
 
-### [TODO]
+Pra mediar essa relação, pensamos num projeto que tenta fazer a interface de um contratante com o prestador de serviço, oferecendo para ambos
+transparência no acordo informal, acesso a mais informações, recomendações e segurança para que tanto o prestador quanto o 
+contratante tenham uma experiência satisfatória e mais assertiva no acordo de serviço.
 
-## Solução proposta
+Assim, o foco de monetização estaria centrado na escala, sistema do NegócioFechado aposta no efeito de rede de prestadores de serviço de qualidade x contratantes de pequenos-médios serviços cotidianos.
 
-### [TODO]
+(Modelo de monetização em si ainda está por definir.)
+
+## Modelagem
+
+### Entidades do sistema
+
+A princípio teríamos nove entidades no nosso sistema:
+
+- Contratante;
+- Prestador de serviço;
+- Pedido; 
+- Proposta/Conversa;
+- Mensagens;
+- Tipo de Serviço;
+- Comentários/Avaliações;
+- Local;
+- Pagamento.
+
+### Casos de uso
+
+Levantamos 22 principais casos de uso:
+
+- Manutenção de contratados (4 casos de uso);
+- Cadastro de contratante/prestador (2 casos de uso);
+- Aceitar/Rejeitar chat/contato/serviço (1 casos de uso);
+- Editar perfil contratante (1 casos de uso);
+- Editar perfil prestador (1 casos de uso);
+- Criar, sair, deletar chat (3 casos de uso);
+- Filtro de busca (tipo, local, avaliação) (1 caso de uso);
+- Comentário sobre contratante/prestador (1 caso de uso);
+- Avaliar contratante/prestador (1 caso de uso);
+- Favoritar prestador (1 caso de uso);
+- Deletar conta (1 caso de uso);
+- Manutenção do cartão de crédito (4 casos de uso);
+- Pagamento (1 caso de uso).
+
+### Fluxo principal de uso
+
+Primeiro o contratante se cadastra na plataforma, depois eles aplica os filtros do tipo de serviço, dia de disponibilidade características necessárias no prestador de serviço, nosso aplicativo mostrar a quantidade de resultados possíveis. Posteriormente, os prestadores já cadastrados no aplicativo recebem uma notificação sobre as características do serviço e do contratante, com a opção de aceitar ou rejeitar o serviço. No caso de serviço aceito será criado um chat de texto para que o contratante e o prestador possam se comunicar na plataforma. Após a finalização do serviço ou interrupção por outro motivo, terão a opção de finalizar contato na aba do chat, então prestadores e contratantes poderão deixar uma avaliação e/ou comentário sobre os mesmos.
 
 ## Boilerplate usado
 
@@ -24,29 +64,41 @@ In the production mode, we will have only 1 server running. All the client side 
 
 ```bash
 # Clone the repository
-git clone https://github.com/crsandeep/simple-react-full-stack
+git clone https://github.com/dsm-cefet-rj/trabalhointegrado2021-2-2021-2-grupo-10
 
 # Go inside the directory
-cd simple-react-full-stack
+cd trabalhointegrado2021-2-2021-2-grupo-10
 
 # Install dependencies
-yarn (or npm install)
+npm install
 
 # Start development server
-yarn dev (or npm run dev)
+npm run dev
 
 # Build for production
-yarn build (or npm run build)
+npm run build
 
 # Start production server
-yarn start (or npm start)
+npm start
+
+# Run unittests
+npm run test
+
+# Run linter
+npm run lint
 ```
 
 ## Documentation
 
 ### Folder Structure
 
-All the source code will be inside **src** directory. Inside src, there is client and server directory. All the frontend code (react, css, js and any other assets) will be in client directory. Backend Node.js/Express code will be in the server directory.
+All the source code will be inside **src** directory. 
+
+Inside src, there is client and server directory. 
+
+All the frontend code (react, css, js and any other assets) will be in client directory. 
+
+Backend Node.js/Express code will be in the server directory.
 
 ### Linter
 

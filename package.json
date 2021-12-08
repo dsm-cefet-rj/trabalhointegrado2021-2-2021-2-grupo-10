@@ -8,7 +8,21 @@
     "start": "npm run build && node src/server/index.js",
     "client": "webpack-dev-server --mode development --devtool inline-source-map --hot",
     "server": "nodemon src/server/index.js",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "lint-staged": "lint-staged",
+    "lint": "eslint . --ext js",
+    "lint:fix": "eslint . --ext js --fix",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "ci": "npm run lint && npm run test:coverage"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "<rootDir>/src/**"
+    ]
   },
   "author": "Victor Mariano Leite",
   "license": "MIT",
