@@ -19,9 +19,9 @@ Assim, o foco de monetização estaria centrado na escala, sistema do NegócioFe
 A princípio teríamos nove entidades no nosso sistema:
 
 - Contratante/Prestador de serviço/Tipo de serviço/Local/Perfil; "VICTOR"
-- Demanda;
-- Criação de oferta/;
-- Chat/Comentários e Avaliações;
+- Demanda; "NATHAN"
+- Criação de oferta/; "LUIZ"
+- Chat/Comentários e Avaliações; "Emmanuel"
 - Pagamento/cadastro do cartão; "LUCAS"
 
 
@@ -30,15 +30,15 @@ A princípio teríamos nove entidades no nosso sistema:
 Levantamos 00 principais casos de uso:
 
 - Manutenção de usuário (8 casos de uso) (CRUD/CRUD); "VICTOR"
-- Manutenção de demanda (4 casos de uso) (CRUD); 
-- Manutenção de proposta (4 casos de uso) (CRUD); 
-- Manutenção de chat (3 casos de uso) (CRD); 
-- Manutenção de mensagem (3 casos de uso) (CRU); 
-- Aceitar/Rejeitar contato (1 casos de uso) (C); 
-- Avaliar contratante/prestador (1 caso de uso) (C);
-- Comentário sobre contratante/prestador (1 caso de uso) (C);
-- Manutenção do cartão de crédito (4 casos de uso) (CRUD);
-- Pagamento (2 caso de uso) (CR);
+- Manutenção de demanda (4 casos de uso) (CRUD); "NATHAN"
+- Manutenção de oferta (4 casos de uso) (CRUD); "LUIZ"
+- Manutenção de chat (3 casos de uso) (CRD); "Emmanuel"
+- Manutenção de mensagem (3 casos de uso) (CRU); "Emmanuel"
+- Aceitar/Rejeitar contato (1 casos de uso) (C);  "Emmanuel"
+- Avaliar contratante/prestador (1 caso de uso) (C); "Emmanuel"
+- Comentário sobre contratante/prestador (1 caso de uso) (C); "Emmanuel"
+- Manutenção do cartão de crédito (4 casos de uso) (CRUD); "LUCAS"
+- Pagamento (2 caso de uso) (CR); "LUCAS"
 
 ### Fluxo principal de uso
 
