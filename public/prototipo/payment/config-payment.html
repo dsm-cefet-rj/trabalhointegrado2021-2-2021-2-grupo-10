@@ -4,8 +4,10 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     </head>
 
+    <header>
         <div class="container">
             <div class="context midv">
                 <a class="back-button click midv" id="bx">
@@ -21,12 +23,13 @@
             <div class="vl" style="width: 100%;height:1px;background-color: rgba(83, 83, 83, 50);"></div>
 
         </div>
+        
+    </header>
 
-
-    <body>
+    <body style="margin:auto;">
         <div class="config">
             <div class="side-menu" id="nx">
-                <div class="cards midh">
+                <div class="cards">
                     <div class="carder">
                         <div class="upcard">
                             <span class="ic">Credito</span>
@@ -60,13 +63,15 @@
                                 
     
                             <div class="buttoncard">
-                                <a onclick="showCardConfig()">
-                                    <div style="display: flex; align-items: center;">
-                                        <svg width="28" height="28" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18.0827 13.8498C17.7195 14.2152 17.5156 14.7094 17.5156 15.2245C17.5156 15.7397 17.7195 16.2339 18.0827 16.5993L24.9857 23.5998L18.0827 30.5028C17.7195 30.8682 17.5156 31.3624 17.5156 31.8775C17.5156 32.3927 17.7195 32.8869 18.0827 33.2523C18.2639 33.4351 18.4796 33.5801 18.7172 33.6791C18.9549 33.7781 19.2097 33.8291 19.4672 33.8291C19.7246 33.8291 19.9795 33.7781 20.2171 33.6791C20.4547 33.5801 20.6704 33.4351 20.8517 33.2523L29.1197 24.9843C29.3024 24.803 29.4475 24.5873 29.5465 24.3497C29.6455 24.1121 29.6965 23.8572 29.6965 23.5998C29.6965 23.3424 29.6455 23.0875 29.5465 22.8499C29.4475 22.6122 29.3024 22.3966 29.1197 22.2153L20.8517 13.8498C20.6704 13.667 20.4547 13.522 20.2171 13.423C19.9795 13.324 19.7246 13.273 19.4672 13.273C19.2097 13.273 18.9549 13.324 18.7172 13.423C18.4796 13.522 18.2639 13.667 18.0827 13.8498Z" fill="#232323"/>
-                                        </svg>
-                                    </div>                                    
-                                </a>
+                                <div class="click">
+                                    <a onclick="showCardConfig()">
+                                        <div style="display: flex; align-items: center;">
+                                            <svg width="28" height="28" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18.0827 13.8498C17.7195 14.2152 17.5156 14.7094 17.5156 15.2245C17.5156 15.7397 17.7195 16.2339 18.0827 16.5993L24.9857 23.5998L18.0827 30.5028C17.7195 30.8682 17.5156 31.3624 17.5156 31.8775C17.5156 32.3927 17.7195 32.8869 18.0827 33.2523C18.2639 33.4351 18.4796 33.5801 18.7172 33.6791C18.9549 33.7781 19.2097 33.8291 19.4672 33.8291C19.7246 33.8291 19.9795 33.7781 20.2171 33.6791C20.4547 33.5801 20.6704 33.4351 20.8517 33.2523L29.1197 24.9843C29.3024 24.803 29.4475 24.5873 29.5465 24.3497C29.6455 24.1121 29.6965 23.8572 29.6965 23.5998C29.6965 23.3424 29.6455 23.0875 29.5465 22.8499C29.4475 22.6122 29.3024 22.3966 29.1197 22.2153L20.8517 13.8498C20.6704 13.667 20.4547 13.522 20.2171 13.423C19.9795 13.324 19.7246 13.273 19.4672 13.273C19.2097 13.273 18.9549 13.324 18.7172 13.423C18.4796 13.522 18.2639 13.667 18.0827 13.8498Z" fill="#232323"/>
+                                            </svg>
+                                        </div>                                    
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         
@@ -77,52 +82,54 @@
             </div>    
 
             <div class="config-card" id="px">
-                <div>
-                    <div class="card-container">
-                        <div class="card">
-                            <img src="\public\img\assets\png\misc\card.png" alt="" width="250px" height="170px">
+                <div class="uff">
+                    <div class="iff-cube">
+                        <div class="card-container">
+                            <div class="card">
+                                <img src="\public\img\assets\png\misc\card.png" alt="" width="250px" height="170px">
+                            </div>
+                        
                         </div>
                     
                     </div>
-                
-                </div>
-
-                <div class="iff">
-                    <form action="">
-                        <div class="iff-cube">
-                            <div class="cube">
-                                <div class="col">
-                                    <input type="text" name="" id="" placeholder="Nome">
-                                </div>
     
-                                <div class="col">
-                                    <input type="text" name="" id="" placeholder="Número">
+                    <div class="iff">
+                        <form action="">
+                            <div class="iff-cube">
+                                <div class="cube">
+                                    <div class="col">
+                                        <input type="text" name="" id="" placeholder="Nome">
+                                    </div>
+        
+                                    <div class="col">
+                                        <input type="text" name="" id="" placeholder="Número">
+                                    </div>
+        
+                                    <div class="dub">
+                                        <input type="text" name="" id="" placeholder="Validade">
+                                        <input type="text" name="" id="" placeholder="CVV">
+                                    </div>
+        
+                                    <div class="col">
+                                        <select name="serv" id="" placeholder="Serviço">
+                                            <option value="1">Opção 1</option>
+                                            <option value="2">Opção 2</option>
+                                            <option value="3">Opção 3</option>
+                                        </select>
+                                    </div>
                                 </div>
+                            </div>         
     
-                                <div class="dub">
-                                    <input type="text" name="" id="" placeholder="Validade">
-                                    <input type="text" name="" id="" placeholder="CVV">
-                                </div>
+                            <br>
     
-                                <div class="col">
-                                    <select name="serv" id="" placeholder="Serviço">
-                                        <option value="1">Opção 1</option>
-                                        <option value="2">Opção 2</option>
-                                        <option value="3">Opção 3</option>
-                                    </select>
-                                </div>
+                            <div class="row">
+                                <input type="submit" value="Atualizar">
                             </div>
-                        </div>         
+    
+                        </form>
+                    </div>
 
-                        <br>
-
-                        <div class="row">
-                            <input type="submit" value="Atualizar">
-                        </div>
-
-                    </form>
                 </div>
-            </div>
        
         </div>
 
