@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+        <div class="container">
+            <div class="context midv">
+                <a class="back-button click midv" id="bx">
+                    <svg width="28" height="28" viewBox="0 0 51 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M35.9001 23.8997H19.9611L26.8911 16.9907C27.2865 16.5953 27.5087 16.0589 27.5087 15.4997C27.5087 14.9405 27.2865 14.4041 26.8911 14.0087C26.4956 13.6133 25.9593 13.3911 25.4001 13.3911C24.8408 13.3911 24.3045 13.6133 23.9091 14.0087L13.4091 24.5087C13.2179 24.7084 13.068 24.9439 12.9681 25.2017C12.758 25.713 12.758 26.2864 12.9681 26.7977C13.068 27.0555 13.2179 27.291 13.4091 27.4907L23.9091 37.9907C24.1043 38.1875 24.3366 38.3438 24.5925 38.4504C24.8484 38.557 25.1229 38.6119 25.4001 38.6119C25.6773 38.6119 25.9518 38.557 26.2077 38.4504C26.4636 38.3438 26.6959 38.1875 26.8911 37.9907C27.0879 37.7955 27.2441 37.5632 27.3507 37.3073C27.4574 37.0514 27.5123 36.7769 27.5123 36.4997C27.5123 36.2225 27.4574 35.948 27.3507 35.6921C27.2441 35.4362 27.0879 35.2039 26.8911 35.0087L19.9611 28.0997H35.9001C36.457 28.0997 36.9912 27.8785 37.385 27.4846C37.7788 27.0908 38.0001 26.5567 38.0001 25.9997C38.0001 25.4428 37.7788 24.9086 37.385 24.5148C36.9912 24.121 36.457 23.8997 35.9001 23.8997Z" fill="#232323"/>
+                    </svg>
+                </a>
+                <div class="text">
+                    <span>Configurações de Pagamento</span>
+                </div>
+            </div>
+
+            <div class="vl" style="width: 100%;height:1px;background-color: rgba(83, 83, 83, 50);"></div>
+
+        </div>
+
+
+    <body>
+        <div class="config">
+            <div class="side-menu" id="nx">
+                <div class="cards midh">
+                    <div class="carder">
+                        <div class="upcard">
+                            <span class="ic">Credito</span>
+                        </div>
+                        <div class="downcard">
+                            <div class="iconcard">
+                                <img src="..\..\img\png\misc\mastercard-logo.png" alt="" width="38" height="24">
+                            </div>
+                            <div class="infocard">
+                                <span>MR. CARDHOLDER</span>
+                                <span>FINAL 0000</span>
+                            </div>
+                            <div class="selectcard">
+                                <input type="radio" name="" id="" checked>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carder" style="height:60px">
+                        <div class="middlecard">
+                            <div class="iconcard">
+                                <svg width="38" height="auto" viewBox="0 0 66 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M42.2754 19.2753H33.7254V10.7253C33.7254 10.3474 33.5753 9.98491 33.308 9.71767C33.0408 9.45043 32.6783 9.30029 32.3004 9.30029C31.9225 9.30029 31.56 9.45043 31.2928 9.71767C31.0255 9.98491 30.8754 10.3474 30.8754 10.7253V19.2753H22.3254C21.9475 19.2753 21.585 19.4254 21.3178 19.6927C21.0505 19.9599 20.9004 20.3224 20.9004 20.7003C20.9004 21.0782 21.0505 21.4407 21.3178 21.7079C21.585 21.9752 21.9475 22.1253 22.3254 22.1253H30.8754V30.6753C30.8754 31.0532 31.0255 31.4157 31.2928 31.6829C31.56 31.9502 31.9225 32.1003 32.3004 32.1003C32.6783 32.1003 33.0408 31.9502 33.308 31.6829C33.5753 31.4157 33.7254 31.0532 33.7254 30.6753V22.1253H42.2754C42.6533 22.1253 43.0158 21.9752 43.283 21.7079C43.5503 21.4407 43.7004 21.0782 43.7004 20.7003C43.7004 20.3224 43.5503 19.9599 43.283 19.6927C43.0158 19.4254 42.6533 19.2753 42.2754 19.2753Z" fill="#232323"/>
+                                    <rect x="1.70078" y="0.9" width="63" height="39.6" rx="2.7" stroke="#232323" stroke-width="1.8"/>
+                                </svg>                                                               
+                            </div>
+    
+                            <div class="infocard">
+                                <span>Adicionar novo cartão</span>
+                            </div>
+                                
+    
+                            <div class="buttoncard">
+                                <a onclick="showCardConfig()">
+                                    <div style="display: flex; align-items: center;">
+                                        <svg width="28" height="28" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18.0827 13.8498C17.7195 14.2152 17.5156 14.7094 17.5156 15.2245C17.5156 15.7397 17.7195 16.2339 18.0827 16.5993L24.9857 23.5998L18.0827 30.5028C17.7195 30.8682 17.5156 31.3624 17.5156 31.8775C17.5156 32.3927 17.7195 32.8869 18.0827 33.2523C18.2639 33.4351 18.4796 33.5801 18.7172 33.6791C18.9549 33.7781 19.2097 33.8291 19.4672 33.8291C19.7246 33.8291 19.9795 33.7781 20.2171 33.6791C20.4547 33.5801 20.6704 33.4351 20.8517 33.2523L29.1197 24.9843C29.3024 24.803 29.4475 24.5873 29.5465 24.3497C29.6455 24.1121 29.6965 23.8572 29.6965 23.5998C29.6965 23.3424 29.6455 23.0875 29.5465 22.8499C29.4475 22.6122 29.3024 22.3966 29.1197 22.2153L20.8517 13.8498C20.6704 13.667 20.4547 13.522 20.2171 13.423C19.9795 13.324 19.7246 13.273 19.4672 13.273C19.2097 13.273 18.9549 13.324 18.7172 13.423C18.4796 13.522 18.2639 13.667 18.0827 13.8498Z" fill="#232323"/>
+                                        </svg>
+                                    </div>                                    
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </div>    
+
+            <div class="config-card" id="px">
+                <div>
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="..\..\img\png\misc\card.png" alt="" width="250px" height="170px">
+                        </div>
+                    
+                    </div>
+                
+                </div>
+
+                <div class="iff">
+                    <form action="">
+                        <div class="iff-cube">
+                            <div class="cube">
+                                <div class="col">
+                                    <input type="text" name="" id="" placeholder="Nome">
+                                </div>
+    
+                                <div class="col">
+                                    <input type="text" name="" id="" placeholder="Número">
+                                </div>
+    
+                                <div class="dub">
+                                    <input type="text" name="" id="" placeholder="Validade">
+                                    <input type="text" name="" id="" placeholder="CVV">
+                                </div>
+    
+                                <div class="col">
+                                    <select name="serv" id="" placeholder="Serviço">
+                                        <option value="1">Opção 1</option>
+                                        <option value="2">Opção 2</option>
+                                        <option value="3">Opção 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>         
+
+                        <br>
+
+                        <div class="row">
+                            <input type="submit" value="Atualizar">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+       
+        </div>
+
+        <script>
+            function showCardConfig() {
+                document.getElementById("px").style.width = "100%";
+                document.getElementById("px").style.display = "flex";
+                document.getElementById("nx").style.display = "none";
+
+
+                document.getElementById("bx").href = "";
+                document.getElementById("bx").onclick = "back()";
+            }
+
+            function back() {          
+                document.getElementById("px").style.width = "default%";
+                document.getElementById("px").style.display = "none";
+                document.getElementById("nx").style.display = "default";
+
+                document.getElementById("bx").href = "";
+                document.getElementById("bx").onclick = "";
+            }
+
+        </script>
+
+    </body>
+
+</html>
