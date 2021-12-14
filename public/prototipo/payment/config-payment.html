@@ -72,7 +72,7 @@
             <div class="iff-cube">
                <div class="card-container">
                   <div class="card">
-                     <img src="\public\img\assets\png\misc\card.png" alt="" width="250px" height="170px">
+                     <img src="\public\img\assets\png\misc\card.png" alt="" width="240px" height="160px">
                   </div>
                </div>
             </div>
@@ -81,20 +81,20 @@
                   <div class="iff-cube">
                      <div class="cube">
                         <div class="col">
-                           <input type="text" name="" id="" placeholder="Nome">
+                           <input type="text" name="" id="" placeholder="Nome" required>
                         </div>
                         <div class="col">
-                           <input type="text" name="" id="" placeholder="Número">
+                           <input type="text" name="" id="" placeholder="Número" required>
                         </div>
                         <div class="dub">
-                           <input type="text" name="" id="" placeholder="Validade">
-                           <input type="text" name="" id="" placeholder="CVV">
+                           <input type="text" name="" id="" placeholder="Validade" required>
+                           <input type="text" name="" id="" placeholder="CVV" required>
                         </div>
                         <div class="col">
-                           <select name="serv" id="" placeholder="Serviço">
-                              <option value="1">Opção 1</option>
-                              <option value="2">Opção 2</option>
-                              <option value="3">Opção 3</option>
+                           <select name="serv" id="" required>
+                               <option value="" disabled selected hidden>Escolha o tipo de cartão</option>
+                                <option value="1">Crédito</option>
+                                <option value="2">Débito</option>
                            </select>
                         </div>
                      </div>
