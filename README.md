@@ -1,48 +1,6 @@
 # NegócioFechado - Grupo 10
 
-### Problema e solução
-
-O Brasil vem entrando numa crise de desemprego crescente nos últimos anos, que por consequência aumentou muito o número de trabalhadores informais que estão sujeitos à qualidade de trabalho arbitrárias e muitas vezes abusivas.
-
-Pra mediar essa relação, pensamos num projeto que tenta fazer a interface de um contratante com o prestador de serviço, oferecendo para ambos
-transparência no acordo informal, acesso a mais informações, recomendações e segurança para que tanto o prestador quanto o 
-contratante tenham uma experiência satisfatória e mais assertiva no acordo de serviço.
-
-Assim, o foco de monetização estaria centrado na escala, sistema do NegócioFechado aposta no efeito de rede de prestadores de serviço de qualidade x contratantes de pequenos-médios serviços cotidianos.
-
-(Modelo de monetização em si ainda está por definir.)
-
-## Modelagem
-
-### Entidades do sistema
-
-A princípio teríamos cinco entidades no nosso sistema:
-
-- Contratante/Prestador de serviço/Tipo de serviço/Local/Perfil; "VICTOR"
-- Demanda; "NATHAN"
-- Criação de oferta/; "LUIZ"
-- Chat/Comentários e Avaliações; "Emmanuel"
-- Pagamento/cadastro do cartão; "LUCAS"
-
-
-### Casos de uso
-
-Levantamos 10 principais casos de uso:
-
-- Manutenção de usuário (8 casos de uso) (CRUD/CRUD); "VICTOR"
-- Manutenção de demanda (4 casos de uso) (CRUD); "NATHAN"
-- Manutenção de oferta (4 casos de uso) (CRUD); "LUIZ"
-- Manutenção de chat (3 casos de uso) (CRD); "Emmanuel"
-- Manutenção de mensagem (3 casos de uso) (CRU); "Emmanuel"
-- Aceitar/Rejeitar contato (1 casos de uso) (C);  "Emmanuel"
-- Avaliar contratante/prestador (1 caso de uso) (C); "Emmanuel"
-- Comentário sobre contratante/prestador (1 caso de uso) (C); "Emmanuel"
-- Manutenção do cartão de crédito (4 casos de uso) (CRUD); "LUCAS"
-- Pagamento (2 caso de uso) (CR); "LUCAS"
-
-### Fluxo principal de uso
-
-Primeiro o cliente se cadastra na plataforma e se indentifica como prestador de serviço ou contratante de serviço,  se ele se indentificar como contratante de serviço será permitido que aplique filtros de características necessárias para um serviço acontecer, então é criada uma demanda de serviço onde os prestadores poderão ver e possivelmente entrar em contato com o responsável pela demanda. Nosso aplicativo também mostra possiveis prestadores de serviços que podem ajuda-lo com aquela demanda. Para os prestadores de serviço o aplicativo funciona basicamente da mesma forma prém aos inves de criarem demanda, eles poderão visualizar as demandas e realizar propostas para os responsáveis de cada demanda. Posteriormente ambos tem a chance recebem ou enviar notificações uns aos outros com as características do serviço para o caso do usuário ser um contratante ou com as caracteristicas do seu perfil para o caso do usuário ser um prestador, com a opção de aceitar ou rejeitar o contato do outro usuário. Assim de acordo com ambas partes será criado um chat de texto para que o contratante e o prestador possam se comunicar na plataforma. Após a finalização do serviço ou interrupção por outro motivo, terão a opção de finalizar contato na aba do chat, então prestadores e contratantes poderão deixar uma avaliação e/ou comentário sobre os mesmos.
+O projeto NegócioFechado é um software para web desenvolvido na disciplina de PSW, no CEFET/RJ, que beneficiaria as partes interessadas em serviços da categoria *freelancer*: os **Contrantantes**, aqueles que precisam de um serviço, e os **Prestadores**, aqueles que prestam o serviço, sendo assim, um software de *online outsourcing*.
 
 ## Boilerplate usado
 
