@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    height: 100%;
+}
+
+body {
+    background: whitesmoke;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.columni {
+    display: flex;
+    flex-direction: column;
+}
+
+.hfill {
+    height: 100%;
+}
+
+.vfill {
+    width: 100%;
+}
+
+.container {
+    height: 64px;
+    padding-left: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid black;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.context {
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+    font-size: large;
+    font-weight: 600;
+}
+
+.page {
+    display: flex;
+    width: 100%;
+    height: calc(100% - 64px);
+}
+
+.list-side {
+    float: right;
+    padding: 12px;
+    overflow-y: auto;
+    min-width: fit-content;
+
+    justify-content: flex-start;
+    border-right: 1px solid grey;
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    row-gap: 12px;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.clicky {
+    cursor: pointer;
+}
+
+.card {
+    border-radius: 8px;
+    
+    width: 100%;
+    min-width: 300px;
+    max-width: 400px;
+    min-height: fit-content;
+    margin: 0 12px;
+
+    background: white;
+    border: 1px solid grey;
+    box-shadow: 0 2px 4px rgb(196, 209, 211);
+}
+
+.bttn-card {
+    background: none;
+    border: none;
+}
+
+.card-header {
+    padding-left: 8px;
+    padding-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    min-height: 28px;
+    border-bottom: 1px solid grey;
+}
+
+.card-content {
+    padding: 12px;
+    font-size: medium;
+    justify-content: space-between;
+}
+
+.space-card-form {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding:  48px;
+}
+
+.inside-card-content {
+    display: flex;
+    width: 100%;
+    padding-left: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-form {
+    display: flex;
+    width: 100%;
+    min-width: 300px;
+    max-width: 480px;
+    row-gap: 12px;
+}
+
+input[type=text], select {
+    width: 100%;
+    border: 1px solid #535353;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(196, 209, 211);
+}
+
+input[type=submit], .button {
+    background-color: #49BEFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* input[type=submit]:active, .button:active {
+    background-color: white;
+    color:#49BEFF;
+    border: 1px solid #49BEFF;
+} */
+
+input[type=submit]:hover, .button:hover {
+    background-color: #3fa2d8;
+    color:white;
+}
+
+@media only screen and (max-width: 850px) {
+    #configcardside {
+        width: 100%;
+        border-width: 0;
+    }
+    #configcardforms {
+        display: none;
+    }
+}

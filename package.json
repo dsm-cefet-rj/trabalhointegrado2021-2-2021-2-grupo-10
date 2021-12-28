@@ -1,64 +1,41 @@
 {
-  "name": "trabalhointegrado2021-2-2021-2-grupo-10",
-  "version": "1.0.0",
-  "description": "Boilerplate to build a full stack web application using React, Node.js, Express and Webpack.",
-  "main": "src/server/index.js",
+  "name": "proj",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.7.1",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "5.0.0",
+    "web-vitals": "^2.1.2"
+  },
   "scripts": {
-    "build": "webpack --mode production",
-    "start": "npm run build && node src/server/index.js",
-    "client": "webpack-dev-server --mode development --devtool inline-source-map --hot",
-    "server": "nodemon src/server/index.js",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "lint-staged": "lint-staged",
-    "lint": "eslint . --ext js",
-    "lint:fix": "eslint . --ext js --fix",
-    "test": "jest",
-    "test:coverage": "jest --coverage",
-    "ci": "npm run lint && npm run test:coverage"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "lint-staged": {
-    "*.js": "eslint --fix"
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "<rootDir>/src/**"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
     ]
   },
-  "author": "Victor Mariano Leite",
-  "license": "MIT",
-  "dependencies": {
-    "babel-polyfill": "^6.26.0",
-    "eslint-config-airbnb": "^19.0.2",
-    "express": "^4.16.3",
-    "npm": "^8.2.0",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "clean-webpack-plugin": "^1.0.0",
-    "html-webpack-plugin": "^5.0.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.16.0",
-    "@babel/eslint-parser": "^7.16.3",
-    "@babel/plugin-proposal-class-properties": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.0",
-    "concurrently": "^6.4.0",
-    "css-loader": "^6.0.0",
-    "eslint": "^8.4.1",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.27.1",
-    "eslint-plugin-react-hooks": "^4.3.0",
-    "file-loader": "^6.0.0",
-    "nodemon": "^2.0.15",
-    "prettier": "2.5.1",
-    "style-loader": "^0.23.0",
-    "url-loader": "^4.0.0",
-    "webpack": "^5.0.0",
-    "webpack-cli": "^4.0.0",
-    "webpack-dev-server": "^4.0.0"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
