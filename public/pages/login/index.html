@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="actions/toggle-password.js" defer></script>
+    <title>Negocio Fechado - Login</title>
+</head>
+
+<body>
+    <header class="login-header">
+        <figure class="login-header__logo">
+            <img src="../../Imgs/Logomarca@2x.svg" alt="bumping fists with NegocioFechado name logo">
+        </figure>
+        <figcaption style="display: none;">A worker and a client bumping fists, closing a deal.</figcaption>
+    </header>
+    <main class="user-input">
+        <h1 class="user-input__presentation-text" style="font-weight: normal;">Acesse a sua conta e <strong>bora
+                fechar!</strong></h1>
+        <form action="" class="user-input__login-form">
+            <div class="email-input">
+                <label for=""></label>
+                <input id="email" type="text" name="email" autocomplete="email" placeholder="E-mail" required>
+            </div>
+            <div class="password-input">
+                <label for="password"></label>
+                <button id="toggle-password" type="button"
+                    aria-label="Show password as plain text. Warning: this will display your password on the screen.">&#128065</button>
+                <input id="password" type="password" name="password" autocomplete="current-password" placeholder="Senha"
+                    required>
+            </div>
+        </form>
+        <div class="user-input__login-actions">
+            <div class="forgot-my-password">
+                <a href="">Esqueci minha senha</a>
+            </div>
+            <div class="login">
+                <button type="submit">Entrar</button>
+            </div>
+        </div>
+        <div class="user-input__signup-actions">
+            <p>Primeira vez? <a href="">Cadastre-se</a> </p>
+        </div>
+    </main>
+    <footer>
+        <p>
+            Ao prosseguir, voce concorda com os <a href="">Termos de Uso</a>
+            e a <a href="">Politica de Privacidade</a> da NegocioFechado.
+        </p>
+    </footer>
+</body>
+
+</html>

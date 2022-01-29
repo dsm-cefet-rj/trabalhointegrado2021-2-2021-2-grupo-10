@@ -1,0 +1,196 @@
+/* Global CSS Configuration */
+@import url('../common/style.css');
+h1, h3 {
+    font-weight: normal;
+}
+
+/* Page Classes Attributes */
+.signup-header {
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-image:
+        linear-gradient(to bottom, rgba(65, 65, 65, 0.7) 0%, rgba(65, 65, 65, 0.7) 0%),
+        url("../../Imgs/header-fist-bump.webp");
+    background-position: center;
+    max-width: 100%;
+    height: clamp(150px, 15vw, 350px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-header__logo {
+    width: clamp(150px,27%,350px);
+}
+
+.signup-sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    font-size: var(--step-0);
+}
+
+.signup-sections__step-1,
+.signup-sections__step-2 > *,
+.signup-sections__worker-step-3 > *,
+.signup-sections__client-step-3 > *,
+.signup-sections__contact-step-4 > *,
+.signup-sections__contact-step-end > * {
+    display: none;
+}
+
+.signup-sections__step-1,
+.signup-sections__step-2,
+.signup-sections__worker-step-3,
+.signup-sections__client-step-3,
+.signup-sections__contact-step-4,
+.signup-sections__contact-step-end
+ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-sections__step-1--presentation-text,
+.signup-sections__step-2--presentation-text,
+.signup-sections__worker-step-3--presentation-text,
+.signup-sections__client-step-3--presentation-text,
+.signup-sections__contact-step-4--presentation-text,
+.signup-sections__contact-step-end--presentation-text {
+    font-size: var(--step-0);
+    width: 20ch;
+    text-align: center;
+    color: rgb(83,83,83);
+}
+
+.signup-sections__worker-step-3,
+.signup-sections__client-step-3,
+.signup-sections__contact-step-4 {
+    width: 75%;
+}
+
+.signup-sections__client-step-3--option,
+.signup-sections__worker-step-3--option {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: .1s ease;
+    border-radius: 5px;
+    border:rgba(41, 41, 41, 0.7) solid 3px;
+}
+
+.signup-sections__client-step-3--option > * ,
+.signup-sections__worker-step-3--option > * {
+    text-align: center;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    width: 100%;
+    height: 100%;
+}
+  
+.signup-sections__client-step-3--option>input,
+.signup-sections__worker-step-3--option>input {
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Services selection grid layout */
+.signup-sections__worker-step-3--option {
+    grid-area: 'wOption';
+}
+.signup-sections__client-step-3--option {
+    grid-area: 'cOption';
+}
+
+.signup-sections__client-step-3--options {
+    padding: 2ch;
+    position: relative;
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-areas: 
+        'cOption cOption cOption'
+        'cOption cOption cOption'
+        'cOption cOption cOption';
+}
+
+.signup-sections__worker-step-3--options {
+    padding: 2ch;
+    position: relative;
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-areas: 
+        'wOption wOption wOption'
+        'wOption wOption wOption'
+        'wOption wOption wOption';
+}
+
+@media all and (min-width: 500px) and (max-width: 850px) {
+    .signup-sections__client-step-3--options {
+        grid-template-areas: 
+            'cOption cOption'
+            'cOption cOption'
+            'cOption cOption'
+            'cOption cOption'
+            'cOption cOption';
+    }
+    .signup-sections__worker-step-3--options {
+        grid-template-areas: 
+            'wOption wOption'
+            'wOption wOption'
+            'wOption wOption'
+            'wOption wOption'
+            'wOption wOption';
+    }
+}
+
+@media all and (max-width: 500px) {
+    .signup-sections__client-step-3--options {
+        grid-template-areas: 
+            'cOption'
+            'cOption'
+            'cOption'
+            'cOption'
+            'cOption'
+            'cOption'
+            'cOption'
+            'cOption'
+            'cOption';
+    }
+    .signup-sections__worker-step-3--options {
+        grid-template-areas: 
+            'wOption'
+            'wOption'
+            'wOption'
+            'wOption'
+            'wOption'
+            'wOption'
+            'wOption'
+            'wOption'
+            'wOption';
+    }
+}
+
+.signup-sections__contact-step-4--presentation-text-details,
+.signup-sections__contact-step-end--presentation-text-details {
+    font-size: var(--step--1);
+    width: 90%;
+    color: rgb(83,83,83);
+}
+
+
+.signup-step-selector {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20%;
+    font-size: var(--step-0);
+}

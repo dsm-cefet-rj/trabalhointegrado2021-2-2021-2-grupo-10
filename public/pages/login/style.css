@@ -1,0 +1,116 @@
+/* Global CSS Configuration */
+@import url('../common/style.css');
+
+/* Page Classes Attributes */
+.login-header {
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-image:
+        linear-gradient(to bottom, rgba(65, 65, 65, 0.7) 0%, rgba(65, 65, 65, 0.7) 0%),
+        url("../../Imgs/header-fist-bump.webp");
+    background-position: center;
+    max-width: 100%;
+    height: clamp(150px, 15vw, 350px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-header__logo {
+    width: clamp(150px,27%,350px);
+}
+
+.user-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    font-size: var(--step-0);
+}
+
+.user-input__presentation-text {
+    font-size: var(--step-0);
+    width: 20ch;
+    text-align: center;
+    color: rgb(83,83,83);
+}
+
+.user-input__login-form {
+    display: inherit;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.email-input > #email,
+.password-input > #password {
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid rgb(83,83,83);
+    width: var(--input-width);
+    height: 2.5em;  
+    padding-inline: 1em;
+    box-shadow: 0 0.5px 3px 0 rgba(0, 0, 0, 0.25);
+}
+
+.email-input > #email:hover, 
+.password-input > #password:hover {
+    box-shadow: 0 0 5pt 0.5pt #D6D6D6;
+  }
+
+.email-input > #email:focus,
+.password-input > #password:focus {
+    box-shadow: 0 0 5pt 2pt #D6D6D6;
+    outline-width: 0px;
+    border-color: rgb(88, 172, 233);
+}
+
+.password-input > #toggle-password {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    top: 67%;
+    right: 8%;
+}
+
+.user-input__login-form {
+    position: relative;
+}
+
+.user-input__login-actions,
+.user-input__signup-actions {
+    margin-top: 1em;
+    font-size: var(--step--1);
+    display: inherit;
+    column-gap: 5rem;
+}
+
+.user-input__login-actions > *,
+.user-input__signup-actions > * {
+    flex-basis: 100%;
+}
+
+.user-input__login-actions > .login,
+.user-input__login-actions > .forgot-my-password {
+    margin:auto;
+    text-align: center;
+    width: 30ch;
+}
+
+.user-input__login-actions > .login {
+    position: relative;
+    right: -2ch;
+    width: 6ch;
+}
+
+.user-input__login-actions > .forgot-my-password {
+    position: relative;
+    left: 1ch;
+    font-size: 1.4ch;
+}
+
+.user-input__signup-actions {
+    margin-top: min(10px, 3rem);
+}

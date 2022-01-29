@@ -3,13 +3,51 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DCS Editor</title>
+    <meta name="description" content="Workers and clients social network">
+    <meta name="keywords" content="social network, platform, web platform">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>NegócioFechado</title>
 </head>
 
 <body>
-    <div id="root"></div>
+    <header>
+        <h1 class="texto-vermelho">Projeto</h1>
+        <ul class="tree">
+            <li>
+                <span wm-folder>public</span>
+                <ul>
+                    <li>index.html</li>
+                    <li>style.css</li>
+                </ul>
+            </li>
+            <li>
+                <span wm-folder>src</span>
+                <ul>
+                    <li>app.css</li>
+                    <li>App.js</li>
+                </ul>
+            </li>
+            <li>
+                <span wm-folder>test</span>
+                <ul>
+                    <li>test_app.css</li>
+                    <li>test_App.js</li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+    <script>
+        document.querySelectorAll('[wm-folder]').forEach(folder => {
+            folder.mousemove = function (e) {
+                const ul = folder.nextElementSibling;
+                const d = ul.style.display;
+                ul.style.display = d === 'none' ? 'block' : 'none';
+            }
+        })
+    </script>
 </body>
 
 </html>
